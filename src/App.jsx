@@ -24,7 +24,7 @@ export default function App() {
     phone: "+91-8378040790",
     location: "Badlapur, Maharashtra",
     github: "https://github.com/SAdurkar",
-    linkedin: "https://linkedin.com/in/snehal-adurkar",
+    linkedin: "https://www.linkedin.com/in/snehal-adurkar", // <-- yahan apna exact LinkedIn link paste karein
     resumeFile: "./snehal_resume_IT.pdf.pdf",
     hpclCertificate: "./Certificate HPCL.pdf",
     itiMarksheet: "./ITI Marksheet.pdf"
@@ -364,7 +364,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 03: Projects (Clean View Code Only) */}
+          {/* Section 03: Projects */}
           <section>
             <div className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">03 / Featured Projects</span>
