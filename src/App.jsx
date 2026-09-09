@@ -15,7 +15,7 @@ export default function App() {
     phone: "+91-8378040790",
     location: "Badlapur, Maharashtra",
     github: "https://github.com/SAdurkar",
-    linkedin: "https://www.linkedin.com/search/results/all/?keywords=Snehal%20Jaydas%20Adurkar",
+    linkedin: "https://www.linkedin.com/in/snehal-adurkar-7b4479288/",
     resumeFile: "./snehal_resume_IT.pdf.pdf",
     hpclCertificate: "./Certificate HPCL.pdf",
     itiMarksheet: "./ITI Marksheet.pdf"
@@ -132,13 +132,13 @@ export default function App() {
   ];
 
   return (
-    <div className="bg-slate-100 text-slate-800 min-h-screen p-3 sm:p-6 lg:p-10 flex justify-center items-center selection:bg-emerald-200">
+    <div className="bg-slate-100 text-slate-800 min-h-screen p-3 sm:p-6 lg:p-10 flex justify-center items-center selection:bg-blue-200">
       
-      {/* Outer Main Container */}
+      {/* Outer Main Card Container */}
       <div className="bg-white w-full max-w-7xl rounded-3xl shadow-xl border border-slate-200/90 overflow-hidden flex flex-col lg:flex-row">
         
         {/* LEFT SIDEBAR */}
-        <aside className="w-full lg:w-[35%] bg-slate-50 p-6 sm:p-8 lg:p-9 border-b lg:border-b-0 lg:border-r border-slate-200 flex flex-col justify-between">
+        <aside className="w-full lg:w-[35%] bg-slate-50/80 p-6 sm:p-8 lg:p-9 border-b lg:border-b-0 lg:border-r border-slate-200 flex flex-col justify-between">
           <div>
             {/* Profile Photo */}
             <div className="w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-sm border-4 border-white bg-slate-200 mb-6 group relative">
@@ -153,7 +153,7 @@ export default function App() {
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
               {userData.name}
             </h1>
-            <p className="text-emerald-700 font-bold text-xs uppercase tracking-wider mt-1 mb-1 font-mono">
+            <p className="text-blue-700 font-bold text-xs uppercase tracking-wider mt-1 mb-1 font-mono">
               {userData.headline}
             </p>
             <p className="text-slate-500 text-xs font-medium mb-5">
@@ -167,7 +167,7 @@ export default function App() {
               </span>
               <a 
                 href={`tel:${userData.phone}`} 
-                className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs font-medium hover:border-emerald-500 hover:text-emerald-700 transition"
+                className="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-2xs font-medium hover:border-blue-500 hover:text-blue-700 transition"
               >
                 📞 {userData.phone}
               </a>
@@ -197,7 +197,7 @@ export default function App() {
 
             {/* Verified Certifications & Documents */}
             <div className="space-y-3 mb-6">
-              {/* HPCL National Apprenticeship Certificate - Premium Dark Blue Card */}
+              {/* HPCL National Apprenticeship Certificate - Dark Blue Card */}
               <div className="bg-slate-900 text-white border border-slate-800 p-4 rounded-2xl shadow-md">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-extrabold text-emerald-400 uppercase tracking-wider">National Apprenticeship (NAC)</span>
@@ -223,11 +223,11 @@ export default function App() {
                 </div>
               </div>
 
-              {/* ITI COPA Verified Marksheet - Clean White Card */}
-              <div className="bg-white border border-slate-200 p-4 rounded-2xl shadow-2xs">
+              {/* ITI COPA Verified Marksheet */}
+              <div className="bg-white border border-blue-100 p-4 rounded-2xl shadow-2xs">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-extrabold text-amber-700 uppercase tracking-wider">ITI Marks Statement</span>
-                  <span className="text-[10px] bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-bold">398 / 400</span>
+                  <span className="text-[10px] font-extrabold text-blue-800 uppercase tracking-wider">ITI Marks Statement</span>
+                  <span className="text-[10px] bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded-full font-bold">398 / 400</span>
                 </div>
                 <p className="text-xs font-bold text-slate-900 mt-1.5 leading-snug">
                   Computer Operator & Programming Assistant (COPA)
@@ -241,7 +241,7 @@ export default function App() {
                     href={userData.itiMarksheet} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-amber-700 hover:text-amber-900 hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-700 hover:text-blue-900 hover:underline cursor-pointer"
                   >
                     <span>📄 View Official Marksheet (PDF)</span>
                     <span className="text-[10px]">↗</span>
@@ -250,8 +250,8 @@ export default function App() {
               </div>
 
               {/* B.Sc IT Academic Distinction */}
-              <div className="bg-emerald-50/70 border border-emerald-200 p-3.5 rounded-2xl">
-                <span className="text-[10px] font-extrabold text-emerald-800 uppercase tracking-wider block">Academic Distinction</span>
+              <div className="bg-blue-50/70 border border-blue-200/80 p-3.5 rounded-2xl">
+                <span className="text-[10px] font-extrabold text-blue-800 uppercase tracking-wider block">Academic Distinction</span>
                 <p className="text-xs font-semibold text-slate-800 mt-0.5 leading-snug">
                   Ranked 1st in B.Sc. IT (Semesters 5 & 6) with 9.0+ SGPA
                 </p>
@@ -263,7 +263,7 @@ export default function App() {
           <div className="pt-5 border-t border-slate-200 space-y-2.5">
             <button 
               onClick={() => setIsContactOpen(true)} 
-              className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl text-xs uppercase tracking-wider transition shadow-sm active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl text-xs uppercase tracking-wider transition shadow-sm active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Send A Direct Message</span>
               <span>✉</span>
@@ -288,32 +288,33 @@ export default function App() {
           </div>
         </aside>
 
-        {/* RIGHT MAIN CONTENT (Clean, Light & Readable) */}
+        {/* RIGHT MAIN CONTENT (All Boxes in Soft Blue Tint) */}
         <main className="w-full lg:w-[65%] p-6 sm:p-10 lg:p-12 space-y-12 overflow-y-auto lg:max-h-[92vh] bg-white">
           
           {/* Section 01: Summary & Quick Metrics */}
           <section>
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">01 / Profile Overview</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">01 / Profile Overview</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
             
             <p className="text-xl sm:text-2xl text-slate-700 font-light leading-relaxed">
-              Passionate <strong className="font-bold text-slate-900">Full-Stack & Android Developer</strong> combined with enterprise IT Support experience. Specializing in modern web applications, generative AI integration using <span className="text-emerald-700 font-semibold">Node.js and Express</span>, robust mobile applications with <span className="text-emerald-700 font-semibold">Android SDK (Java/Kotlin)</span>, and systematic infrastructure troubleshooting.
+              Passionate <strong className="font-bold text-slate-900">Full-Stack & Android Developer</strong> combined with enterprise IT Support experience. Specializing in modern web applications, generative AI integration using <span className="text-blue-700 font-semibold">Node.js and Express</span>, robust mobile applications with <span className="text-blue-700 font-semibold">Android SDK (Java/Kotlin)</span>, and systematic infrastructure troubleshooting.
             </p>
 
+            {/* Metrics Boxes with Soft Blue Background */}
             <div className="grid grid-cols-3 gap-3 mt-6 text-center">
-              <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200/90 shadow-2xs">
+              <div className="p-4 bg-slate-50/90 rounded-2xl border border-blue-100/80 shadow-2xs">
                 <p className="text-xl sm:text-2xl font-black text-slate-900">1+ Yr</p>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-0.5">Enterprise Exp</p>
               </div>
-              <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200/90 shadow-2xs">
+              <div className="p-4 bg-slate-50/90 rounded-2xl border border-blue-100/80 shadow-2xs">
                 <p className="text-xl sm:text-2xl font-black text-slate-900">4+</p>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-0.5">Built Projects</p>
               </div>
-              <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200/90 shadow-2xs">
-                <p className="text-xl sm:text-2xl font-black text-emerald-700">9.0+</p>
-                <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mt-0.5">B.Sc. IT SGPA</p>
+              <div className="p-4 bg-blue-50/60 rounded-2xl border border-blue-200/80 shadow-2xs">
+                <p className="text-xl sm:text-2xl font-black text-blue-700">9.0+</p>
+                <p className="text-[10px] text-blue-600/80 font-bold uppercase tracking-wider mt-0.5">B.Sc. IT SGPA</p>
               </div>
             </div>
           </section>
@@ -321,15 +322,15 @@ export default function App() {
           {/* Section 02: Full-Stack Architecture Strengths */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">02 / Development Pillars</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">02 / Development Pillars</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {fullStackStrengths.map((item, idx) => (
-                <div key={idx} className="p-5 rounded-2xl bg-white border border-slate-200 hover:border-emerald-400 transition shadow-2xs">
+                <div key={idx} className="p-5 rounded-2xl bg-slate-50/60 border border-blue-100/80 hover:border-blue-300 hover:bg-blue-50/30 transition shadow-2xs">
                   <h4 className="text-sm font-black text-slate-900 mb-1.5 flex items-center gap-2">
-                    <span className="text-emerald-700 font-mono text-xs">0{idx + 1}.</span>
+                    <span className="text-blue-700 font-mono text-xs">0{idx + 1}.</span>
                     {item.title}
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -340,10 +341,10 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 03: Projects */}
+          {/* Section 03: Projects (Clean Soft Blue Box Cards) */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">03 / Featured Projects</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">03 / Featured Projects</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
 
@@ -351,11 +352,11 @@ export default function App() {
               {projects.map((proj, idx) => (
                 <div 
                   key={idx} 
-                  className="p-6 sm:p-7 rounded-3xl bg-slate-50/70 border border-slate-200/90 shadow-2xs hover:shadow-sm transition"
+                  className="p-6 sm:p-7 rounded-3xl bg-slate-50/80 border border-blue-100 hover:border-blue-200 shadow-2xs hover:shadow-sm transition"
                 >
                   <div className="flex justify-between items-start gap-4 mb-2">
                     <div>
-                      <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-emerald-700">
+                      <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-blue-700">
                         {proj.tagline}
                       </span>
                       <h3 className="text-lg sm:text-xl font-black tracking-tight mt-0.5 text-slate-900">
@@ -372,7 +373,7 @@ export default function App() {
                     {proj.tech.map((tech) => (
                       <span 
                         key={tech} 
-                        className="text-[10px] font-bold px-2.5 py-1 rounded-lg uppercase bg-white text-slate-700 border border-slate-200 shadow-2xs"
+                        className="text-[10px] font-bold px-2.5 py-1 rounded-lg uppercase bg-white text-blue-900 border border-blue-200/70 shadow-2xs"
                       >
                         {tech}
                       </span>
@@ -400,15 +401,15 @@ export default function App() {
           {/* Section 04: Professional Experience */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">04 / Experience</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">04 / Experience</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
 
-            <div className="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-2xs">
+            <div className="p-6 sm:p-7 rounded-3xl bg-slate-50/80 border border-blue-100 shadow-2xs">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
                 <div>
                   <h3 className="text-base sm:text-lg font-black text-slate-900">Apprentice Trainee (IT)</h3>
-                  <p className="text-xs font-bold text-emerald-700 uppercase">Hindustan Petroleum Corporation Limited (HPCL)</p>
+                  <p className="text-xs font-bold text-blue-700 uppercase">Hindustan Petroleum Corporation Limited (HPCL)</p>
                 </div>
                 <span className="text-xs font-mono font-semibold text-slate-500">Sept 2022 – Sept 2023</span>
               </div>
@@ -421,22 +422,22 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 05: Technical Stack */}
+          {/* Section 05: Technical Stack (Soft Blue Box Cards) */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">05 / Technical Stack</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">05 / Technical Stack</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {skillsData.map((group, idx) => (
-                <div key={idx} className="bg-slate-50/80 p-5 rounded-2xl border border-slate-200">
+                <div key={idx} className="bg-slate-50/80 p-5 rounded-2xl border border-blue-100">
                   <h4 className="text-xs font-extrabold uppercase text-slate-800 tracking-wider mb-3">
                     {group.category}
                   </h4>
                   <div className="flex flex-wrap gap-1.5">
                     {group.items.map((skill) => (
-                      <span key={skill} className="px-2.5 py-1 bg-white text-[11px] font-semibold text-slate-700 rounded-lg border border-slate-200 shadow-2xs">
+                      <span key={skill} className="px-2.5 py-1 bg-white text-[11px] font-semibold text-slate-700 rounded-lg border border-blue-200/60 shadow-2xs">
                         {skill}
                       </span>
                     ))}
@@ -446,10 +447,10 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 06: Education & Qualifications */}
+          {/* Section 06: Education & Qualifications (Soft Blue Box Cards) */}
           <section>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-xs font-mono font-bold text-emerald-700 uppercase tracking-widest">06 / Education & Certifications</span>
+              <span className="text-xs font-mono font-bold text-blue-700 uppercase tracking-widest">06 / Education & Certifications</span>
               <div className="h-[1px] bg-slate-200 flex-1"></div>
             </div>
 
@@ -460,13 +461,13 @@ export default function App() {
                 { year: '2018 – 2020', title: 'Higher Secondary Certificate (HSC Science PCMB)', score: '61.83%', loc: 'Smt. R.P.P. Junior College, Palshet' },
                 { year: '2017 – 2018', title: 'Secondary School Certificate (SSC)', score: '71.60%', loc: 'New English School, Velneshwar' }
               ].map((edu, i) => (
-                <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition shadow-2xs">
+                <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 rounded-2xl border border-blue-100/90 bg-slate-50/70 hover:bg-blue-50/40 transition shadow-2xs">
                   <div className="mb-2 sm:mb-0">
                     <h4 className="text-sm sm:text-base font-extrabold text-slate-900">{edu.title}</h4>
                     <p className="text-xs text-slate-500 font-medium">{edu.loc}</p>
                   </div>
                   <div className="sm:text-right">
-                    <p className="text-base font-black text-slate-900 leading-tight">{edu.score}</p>
+                    <p className="text-base font-black text-blue-900 leading-tight">{edu.score}</p>
                     <p className="text-[10px] font-mono text-slate-400">{edu.year}</p>
                   </div>
                 </div>
@@ -500,7 +501,7 @@ export default function App() {
                   name="name" 
                   required 
                   placeholder="e.g. John Doe"
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-emerald-600"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-blue-600"
                 />
               </div>
 
@@ -511,7 +512,7 @@ export default function App() {
                   name="email" 
                   required 
                   placeholder="name@example.com"
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-emerald-600"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-blue-600"
                 />
               </div>
 
@@ -522,17 +523,17 @@ export default function App() {
                   rows="3" 
                   required 
                   placeholder="Hi Snehal, let's connect regarding an opportunity..."
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-emerald-600"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-300 bg-slate-50 text-sm text-slate-900 focus:bg-white focus:outline-blue-600"
                 ></textarea>
               </div>
 
               {formStatus && (
-                <p className="text-xs text-emerald-700 font-bold">{formStatus}</p>
+                <p className="text-xs text-blue-700 font-bold">{formStatus}</p>
               )}
 
               <button 
                 type="submit"
-                className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow-sm cursor-pointer"
+                className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition shadow-sm cursor-pointer"
               >
                 Send Message
               </button>
