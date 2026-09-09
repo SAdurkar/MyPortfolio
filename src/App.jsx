@@ -7,7 +7,6 @@ export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [formStatus, setFormStatus] = useState('');
 
-  // Sync dark class on body/root
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -114,8 +113,6 @@ export default function App() {
       tech: ["Node.js", "Express.js", "Gemini AI", "Chart.js", "PDF-Extraction"],
       hasCode: true,
       githubUrl: "https://github.com/SAdurkar/Resume-Analyzer",
-      hasLiveDemo: true,
-      demoUrl: "https://github.com/SAdurkar/Resume-Analyzer#demo",
       isLive: true
     },
     {
@@ -125,8 +122,6 @@ export default function App() {
       tech: ["Android Studio", "Kotlin", "Java", "Firebase", "SQL"],
       hasCode: true,
       githubUrl: "https://github.com/SAdurkar/SurakshaPlus",
-      hasLiveDemo: true,
-      demoUrl: "https://github.com/SAdurkar/SurakshaPlus#screens",
       isLive: true
     },
     {
@@ -136,8 +131,6 @@ export default function App() {
       tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "MySQL"],
       hasCode: false,
       githubUrl: null,
-      hasLiveDemo: false,
-      demoUrl: null,
       isLive: false
     },
     {
@@ -147,8 +140,6 @@ export default function App() {
       tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
       hasCode: false,
       githubUrl: null,
-      hasLiveDemo: false,
-      demoUrl: null,
       isLive: false
     }
   ];
@@ -228,7 +219,7 @@ export default function App() {
               </a>
             </div>
 
-            {/* Verified Certifications & Honors */}
+            {/* Verified Certifications & Documents */}
             <div className="space-y-3 mb-6">
               {/* HPCL National Apprenticeship Certificate (NAC) */}
               <div className="bg-blue-500/10 dark:bg-blue-400/10 border border-blue-300/60 dark:border-blue-500/30 p-3.5 rounded-2xl">
@@ -243,7 +234,6 @@ export default function App() {
                   Ministry of Skill Development & Entrepreneurship (NCVET)
                 </p>
                 
-                {/* View Document Link */}
                 <div className="mt-2.5 pt-2 border-t border-blue-200/50 dark:border-blue-800/50">
                   <a 
                     href={userData.hpclCertificate} 
@@ -270,7 +260,6 @@ export default function App() {
                   Practical: 299/300 | Sessional: 99/100 (DGT ATS)
                 </p>
 
-                {/* View Document Link */}
                 <div className="mt-2.5 pt-2 border-t border-amber-200/50 dark:border-amber-800/50">
                   <a 
                     href={userData.itiMarksheet} 
@@ -310,7 +299,6 @@ export default function App() {
               Download Resume (PDF)
             </button>
             
-            {/* Quick Copy Email Bar */}
             <div 
               onClick={handleCopyEmail}
               className="flex items-center justify-between px-3.5 py-2 bg-slate-200/70 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700/80 rounded-xl cursor-pointer transition text-slate-600 dark:text-slate-300"
@@ -338,7 +326,6 @@ export default function App() {
               Passionate <strong className="font-bold text-slate-900 dark:text-white">Full-Stack & Android Developer</strong> combined with enterprise IT Support experience. Specializing in modern web applications, generative AI integration using <span className="text-emerald-600 dark:text-emerald-400 font-semibold">Node.js and Express</span>, robust mobile applications with <span className="text-emerald-600 dark:text-emerald-400 font-semibold">Android SDK (Java/Kotlin)</span>, and systematic infrastructure troubleshooting.
             </p>
 
-            {/* Quick Metrics */}
             <div className="grid grid-cols-3 gap-3 mt-6 text-center">
               <div className="p-3.5 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-800">
                 <p className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">1+ Yr</p>
@@ -377,7 +364,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 03: Projects with Live Demo Links */}
+          {/* Section 03: Projects (Clean View Code Only) */}
           <section>
             <div className="flex items-center gap-3 mb-6">
               <span className="text-xs font-mono font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">03 / Featured Projects</span>
@@ -424,9 +411,8 @@ export default function App() {
                     ))}
                   </div>
 
-                  {/* Project Buttons (Live Demo & Source Code) */}
-                  <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-200/20 dark:border-slate-700">
-                    {proj.hasCode && (
+                  {proj.hasCode && (
+                    <div className="flex items-center gap-3 pt-4 border-t border-slate-200/20 dark:border-slate-700">
                       <a 
                         href={proj.githubUrl} 
                         target="_blank" 
@@ -436,19 +422,8 @@ export default function App() {
                         <span>View Source Code</span>
                         <span>↗</span>
                       </a>
-                    )}
-                    {proj.hasLiveDemo && (
-                      <a 
-                        href={proj.demoUrl} 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        className="text-xs font-bold inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 transition"
-                      >
-                        <span>App Preview & Readme</span>
-                        <span>🔍</span>
-                      </a>
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -539,7 +514,6 @@ export default function App() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white dark:bg-slate-900 w-full max-w-md rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 dark:border-slate-700 relative">
             
-            {/* Close Button */}
             <button 
               onClick={() => setIsContactOpen(false)}
               className="absolute top-5 right-5 text-slate-400 hover:text-slate-700 dark:hover:text-white text-lg font-bold w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 transition"
