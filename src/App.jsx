@@ -195,27 +195,27 @@ export default function App() {
               </a>
             </div>
 
-            {/* Verified Certifications & Documents (Clean White Cards) */}
+            {/* Verified Certifications & Documents */}
             <div className="space-y-3 mb-6">
-              {/* HPCL National Apprenticeship Certificate */}
-              <div className="bg-white border border-slate-200 p-4 rounded-2xl shadow-2xs">
+              {/* HPCL National Apprenticeship Certificate - Premium Dark Blue Card */}
+              <div className="bg-slate-900 text-white border border-slate-800 p-4 rounded-2xl shadow-md">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-extrabold text-blue-700 uppercase tracking-wider">National Apprenticeship (NAC)</span>
-                  <span className="text-[10px] bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded-full font-bold">99.50%</span>
+                  <span className="text-[10px] font-extrabold text-emerald-400 uppercase tracking-wider">National Apprenticeship (NAC)</span>
+                  <span className="text-[10px] bg-slate-800 text-emerald-300 border border-slate-700 px-2.5 py-0.5 rounded-full font-bold">99.50%</span>
                 </div>
-                <p className="text-xs font-bold text-slate-900 mt-1.5 leading-snug">
+                <p className="text-xs font-bold text-white mt-1.5 leading-snug">
                   Hindustan Petroleum Corp. Ltd. (HPCL Refinery)
                 </p>
-                <p className="text-[11px] text-slate-500 mt-0.5">
+                <p className="text-[11px] text-slate-300 mt-0.5">
                   Ministry of Skill Development & Entrepreneurship
                 </p>
                 
-                <div className="mt-2.5 pt-2 border-t border-slate-100">
+                <div className="mt-2.5 pt-2 border-t border-slate-800">
                   <a 
                     href={userData.hpclCertificate} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-700 hover:text-blue-900 hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-400 hover:text-emerald-300 hover:underline cursor-pointer"
                   >
                     <span>📄 View National Certificate (PDF)</span>
                     <span className="text-[10px]">↗</span>
@@ -223,10 +223,10 @@ export default function App() {
                 </div>
               </div>
 
-              {/* NCVT COPA Verified Marksheet */}
+              {/* ITI COPA Verified Marksheet - Clean White Card */}
               <div className="bg-white border border-slate-200 p-4 rounded-2xl shadow-2xs">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-extrabold text-amber-700 uppercase tracking-wider">AITT Marks Statement</span>
+                  <span className="text-[10px] font-extrabold text-amber-700 uppercase tracking-wider">ITI Marks Statement</span>
                   <span className="text-[10px] bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded-full font-bold">398 / 400</span>
                 </div>
                 <p className="text-xs font-bold text-slate-900 mt-1.5 leading-snug">
@@ -288,7 +288,7 @@ export default function App() {
           </div>
         </aside>
 
-        {/* RIGHT MAIN CONTENT (Bright, Crisp & Readable) */}
+        {/* RIGHT MAIN CONTENT (Clean, Light & Readable) */}
         <main className="w-full lg:w-[65%] p-6 sm:p-10 lg:p-12 space-y-12 overflow-y-auto lg:max-h-[92vh] bg-white">
           
           {/* Section 01: Summary & Quick Metrics */}
